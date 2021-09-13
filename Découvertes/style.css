@@ -1,0 +1,45 @@
+/* CSS GENERAL */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS PAR SECTION */
+/* Barre de couleur */
+#barre {
+  display: block;
+}
+
+#barre #red {
+  background-color: red;
+}
+
+#barre #blu {
+  background-color: blue;
+}
+
+#barre #green {
+  background-color: green;
+}
+
+.monospace {
+  font-family: monospace;
+  text-transform: bold;
+}
+/* barre de couleur */
+
+.logo {
+  margin-left: 30px;
+}
+/* couleur des paragraphes */
+#rouge {
+  color: red;
+}
+
+#bleu {
+  color: blue;
+}
+
+#gre {
+  color: green;
+}
+/* fin des couleurs */
