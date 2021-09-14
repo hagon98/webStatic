@@ -1,0 +1,113 @@
+/* CSS GENERAL */
+
+body {
+  margin: 0;
+}
+
+p {
+  font-family: "Work Sans", "Arial", "sans-serif";
+}
+
+h2,
+h1 {
+  font-family: "Amatic SC";
+}
+
+/* FIN CSS GENERAL */
+/* CLASSE GLOBALE */
+.btn {
+  text-decoration: none;
+  color: darksalmon;
+  padding: 10px 15px;
+  border: solid 1px darksalmon;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* CSS PAR SECTION */
+
+/* SECTION HEADER */
+
+header {
+  background-image: url(img/pyramides.jpeg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 200px 150px;
+}
+
+header a {
+  color: white;
+}
+/* fin HEADER */
+
+/* SECTION DESTINATION */
+
+#destination {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+#destination h2 {
+  text-align: left;
+}
+
+#destination img {
+  margin-right: 200px;
+  width: 400px;
+}
+
+#destination,
+div {
+  align-items: center;
+}
+/* FIN SECTION  */
+
+/* SECTION TARIFS */
+
+h2 {
+  text-align: center;
+}
+
+#tarif .article:only-of-type {
+  display: flex;
+}
+
+#article {
+  display: flex;
+  justify-content: space-around;
+}
+
+.border {
+  border: solid 2px darksalmon;
+  text-align: center;
+  padding: 10px;
+}
+
+span {
+  color: darksalmon;
+  font-size: 20px;
+}
+
+#territoire {
+  margin-right: 20px;
+}
+
+#europe {
+  margin-right: 20px;
+}
+/* FIN DE TARIFS */
+
+/* SECTION CONCEPT */
+
+#concept {
+  margin-left: 15px;
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+}
+
+#concept img {
+  width: 400px;
+  margin-left: 20px;
+}
