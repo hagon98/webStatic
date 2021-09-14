@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de voyage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Candidater pour partir en voyage</h1>
+        <p>Notre société <strong>Évasion</strong> vous propose de découvir en avant première des lieux paradisiaques que
+            nous souhaitons ajouter à notre catalogue. Merci de remplir les différents champs ci-dessous pour candidater
+            au poste d'<strong>Éva'discover !</strong></p>
+    </header>
+
+    <section>
+        <fieldset>
+            <legend>Coordonnées</legend>
+            <form method="POST" action="#">
+                <div>
+                    <label for="email">Votre email : (*)</label> : <input type="text" name="mail" id="email"
+                        placeholder="veuillez taper votre Mail ici...">
+                </div>
+                <div>
+                    <label for="telephone">Numéro de téléphone </label> : <input type="number" name="numbers"
+                        id="telephone" placeholder="Tapez votre numéro ici...">
+                </div>
+        </fieldset>
+    </section>
+
+    <section>
+        <fieldset>
+            <legend>Information personnelles</legend>
+            <div>
+                <label for="nom">Votre nom </label> : <input type="text" name="firstName" id="nom"
+                    placeholder="Veuillez entrer votre nom">
+            </div>
+            <div>
+                <label for="prenom">Votre prénom </label> : <input type="text" name="prenom" id="prenom"
+                    placeholder="entrez votre prénom ici...">
+            </div>
+            <hr>
+
+            <div>
+                <label for="quel genre">Vous êtes plutôt :</label>
+                <input type="radio" id="f" name="genre" value="femme">
+                <label for="f">Une femme</label>
+                <input type="radio" id="h" name="genre" value="homme">
+                <label for="h">Un homme</label>
+                <input type="radio" id="determinée" name="genre" value="à determinée">
+                <label for="determinée">à déterminée</label>
+            </div>
+            <hr>
+            <div>
+                <label for="adresse">Votre adresse :</label>
+                <input type="text" name="rue" id="adresse" placeholder="Tapez votre adresse ici">
+            </div>
+            <div>
+                <label for="poste">Votre code postale :</label>
+                <input type="number" name="codePost" id="poste" placeholder="Tapez votre code postale ici">
+            </div>
+            <div>
+                <label for="ville">Votre ville :</label>
+                <input type="text" name="city" id="ville" placeholder="Tapez votre ville ici">
+            </div>
+            <div>
+                <label for="departement">Votre adresse :</label>
+                <select name=”Choix” onChange=”location.href=”+this.options[this.selectedIndex].value+”;”>
+                    <option>Séléctionner votre département</option>
+                    <option value="departe1">Rhône</option>
+                    <option value="departe1">Rhône</option>
+                    <option value="departe1">Rhône</option>
+                    <option value="departe1">Rhône</option>
+                    <option value="departe1">Rhône</option>
+                </select>
+            </div>
+            <hr>
+            <p>Quel budget êtes vous prêt à investir pour valider votre candidature</p>
+
+
+
+
+
+
+        </fieldset>
+    </section>
+    </form>
+</body>
+
+</html>
