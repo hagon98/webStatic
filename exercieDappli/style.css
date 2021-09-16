@@ -1,0 +1,225 @@
+/* CSS GENERAL */
+body {
+  max-width: 1060px;
+  margin: 50px auto;
+  padding: auto;
+}
+
+h1,
+h2 h3 {
+  font-family: "Mandali", "sans-serif";
+}
+
+h2 {
+  color: #6e8e9b;
+}
+
+p {
+  font-family: "Raleway", "sans-serif";
+}
+
+/* CLASSE GLOBAL */
+.btn {
+  /* stylisation des lien en bouton */
+  text-decoration: none;
+  background: #fff;
+  color: #6e8e9b;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin-top: 10px;
+  transition: all 0.9s ease; /*comportement des transitions ease= plus lent à la fin*/
+}
+.btn:hover,
+#contact form input[type="radio"]:checked + label {
+  background-color: wheat;
+  border-radius: 50px;
+}
+/* fin classe btn */
+
+/* classe container */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+/* fin contenair */
+
+/* CLASSSE ICONE */
+.icone {
+  border: #fff solid 1px;
+  border-radius: 50px;
+  box-sizing: 60px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+/* fin classe icone */
+
+/* CSS PAR SECTION */
+
+/* SECTION CONCEPT */
+
+section h2 {
+  margin-left: 5px;
+}
+
+section .verticale-line {
+  display: inline-block;
+  border-left: 4px solid #6e8e9b;
+  background-color: #6e8e9b;
+  height: 70px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+section .concept {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+section .conceptRev {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+article > img {
+  width: 40px;
+  padding: 10px;
+}
+/* fin section concept */
+
+/* SECTION CONTACT */
+#formulaire form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+
+#contact form input[type="radio"] {
+  display: none;
+}
+
+#contact form input[type="radio"] + label {
+  margin-left: 30px;
+}
+
+#contact #perso {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-left: 5px;
+}
+
+#perso input[type="text"],
+#perso input[type="email"] {
+  border-radius: 50px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2) inset;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#interet {
+  margin-left: 10px;
+}
+
+input[type="submit"] {
+  margin-left: 10px;
+}
+/* fin section contact */
+
+/* SECTION LES COURS */
+#lesCours img {
+  width: 300px;
+  padding-left: 5px;
+  padding-right: 40px;
+}
+
+#lesCours #cours {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+/* fin section les cours */
+
+/* SECTION FOOTER */
+footer {
+  color: #fff;
+  background-color: #6e8e9b;
+  width: 100%;
+  padding-bottom: 5px;
+  margin-top: 60px;
+}
+
+footer,
+#piedDePage {
+  display: flex;
+  justify-content: center;
+}
+
+/* SECTION HEADER */
+
+header {
+  background-image: url(img/yogamat.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-size: 80px;
+  letter-spacing: 5px;
+  margin: 0;
+  line-height: 100%;
+}
+
+.container nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#decouvrir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+  padding-bottom: 400px;
+}
+/* fin section header */
+
+/* RESPONSIVE MOBILE < 767px */
+@media (max-width: 767px) {
+  body {
+    max-width: 767px;
+    margin: 0;
+    padding: auto;
+  }
+  /* SECTION CONCEPT */
+  .concept .conceptRev {
+    flex-direction: column;
+  }
+
+  header h1 {
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 5px;
+    margin: 0;
+    line-height: 100%;
+  }
+}
