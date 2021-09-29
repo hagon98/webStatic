@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cornfood</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-brand navbar-dark mx-0">
+            <div class="container">
+                <a id="logo" href="#" class="mt-4"><img src="img/logo.png" alt="logo feuille de blé"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Concept</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="produits.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                produits
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Contacts</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="text-center" id="typo">
+            <h1 class="text-white text-center my-5 fs-1 text-uppercase">Food</h1>
+        </div>
+        </div>
+        </nav>
+    </header>
+
+    <section class="container my-4">
+        <a href="index.html" class="text-decoration-none">Cornfood / </a>
+        <a href="produits.html" class="text-decoration-none">Produits / </a>
+        <a href="#" class="text-decoration-none">Barre protéinée</a>
+        <div class="row my-3">
+            <div class="d-flex align-items-center col-md-8">
+                <img src="img/Image 1.png" alt="image protéine">
+                <div>
+                    <h2 class="text-black">Barre protéinée</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nemo
+                        expedita quisquam illo
+                        ut
+                        repellendus magni dicta magnam, sed provident tempore vel, autem sapiente distinctio fugit
+                        maxime
+                        consequuntur alias a?</p>
+                    <h3>Goût</h3>
+                    <form action="">
+                        <input type="radio" name="recall" id="choix"><label for="choix" class="btn1">Chocolat</label>
+                        <input type="radio" name="recall" id="choix2"><label for="choix2" class="btn1">Fraise</label>
+                        <input type="radio" name="recall" id="choix3"><label for="choix3" class="btn1">Caramel</label>
+                        <h3>Quantité</h3>
+                        <input type="number" min="0" max="100" id="quantite" name="quantite" value="0"
+                            class="sm-form-control required" style="margin-left: 53px;">
+                    </form>
+                </div>
+                <article class="d-flex shadow col-md-4">
+                    <h3>Prix : 1,05€ l'unité</h3>
+                    <input type="submit" value="Acheter" class="btn1">
+                </article>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
